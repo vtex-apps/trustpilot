@@ -1,9 +1,9 @@
 {
-  "name": "YOURAPPNAME",
+  "name": "trustpilot",
   "vendor": "vtex",
   "version": "0.0.1",
-  "title": "CHANGEME",
-  "description": "CHANGEME",
+  "title": "Trustpilot",
+  "description": "Trustpilot integration",
   "billingOptions": {
     "termsURL": "",
     "support": {
@@ -21,12 +21,12 @@
     "vtex.pixel-interfaces": "1.x"
   },
   "settingsSchema": {
-    "title": "YOUR APP NAME",
+    "title": "Trustpilot opions",
     "type": "object",
     "properties": {
-      "gtmId": {
-        "title": "SAMPLE FIELD",
-        "description": "Enter the ID (GTM-XXXX) from your Google Tag Manager",
+      "trustpilotIntegrationKey": {
+        "title": "Integration Key",
+        "description": "Enter the integration key from your Trustpilot business account",
         "type": "string"
       }
     }

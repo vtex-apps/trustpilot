@@ -1,11 +1,4 @@
 <script>
-  (function() {
-    var appId = "{{settings.gtmId}}";
-    if (!appId) {
-      console.error('Warning: No APP NAME ID is defined. Please configure it in the apps admin.');
-      return
-    }
-
-    // Add script here
-  })()
+  (function(w,d,s,r,n){w.TrustpilotObject=n;w[n]=w[n]||function(){(w[n].q=w[n].q||[]).push(arguments)}; a=d.createElement(s);a.async=1;a.src=r;a.type='text/java'+s;f=d.getElementsByTagName(s)[0]; f.parentNode.insertBefore(a,f)})(window,document,'script', 'https://invitejs.trustpilot.com/tp.min.js', 'tp');
+  tp("register", "{{settings.trustpilotIntegrationKey}}");
 </script>
