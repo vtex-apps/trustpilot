@@ -1,5 +1,11 @@
 {
   "pixel.trustpilot": {
     "component": "index"
+  },
+  "trustpilot-widget": {
+    "component": "Widget"
+  },
+  "trustpilot-widget.micro-review-count": {
+    "component": "Widget"
   }
 }
