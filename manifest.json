@@ -1,7 +1,7 @@
 {
-  "name": "trustpilot-pixel",
+  "name": "trustpilot",
   "vendor": "vtex",
-  "version": "0.0.1",
+  "version": "0.0.1-beta",
   "title": "Trustpilot",
   "description": "Trustpilot integration",
   "billingOptions": {
