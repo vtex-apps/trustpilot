@@ -1,19 +1,21 @@
-export interface PixelMessage extends MessageEvent {
-  data:
-    | ProductViewData
-    | ProductClickData
-    | OrderPlacedData
-    | OrderPlacedTrackedData
-    | PageViewData
-    | ProductImpressionData
-    | AddToCartData
-    | RemoveToCartData
-    | CartChangedData
-    | HomePageInfo
-    | ProductPageInfoData
-    | SearchPageInfoData
-    | UserData
-    | CartIdData
+type PixelMessagePayload =
+  | ProductViewData
+  | ProductClickData
+  | OrderPlacedData
+  | OrderPlacedTrackedData
+  | PageViewData
+  | ProductImpressionData
+  | AddToCartData
+  | RemoveToCartData
+  | CartChangedData
+  | HomePageInfo
+  | ProductPageInfoData
+  | SearchPageInfoData
+  | UserData
+  | CartIdData
+
+export interface PixelMessage<T = PixelMessagePayload> extends MessageEvent {
+  data: T
 }
 
 export interface EventData {
@@ -250,7 +252,7 @@ export interface ProductSummary extends Product {
 
 export interface ProductDetail extends Product {
   categoryId: string
-  categoryTree: { id: string; name: string }[]
+  categoryTree: Array<{ id: string; name: string }>
   selectedSku: Item
 }
 

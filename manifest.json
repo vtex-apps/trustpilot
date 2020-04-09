@@ -1,5 +1,5 @@
 {
-  "name": "trustpilot",
+  "name": "trustpilot-pixel",
   "vendor": "vtex",
   "version": "0.0.1",
   "title": "Trustpilot",
@@ -18,7 +18,9 @@
     "docs": "0.x"
   },
   "dependencies": {
-    "vtex.pixel-interfaces": "1.x"
+    "vtex.pixel-interfaces": "1.x",
+    "vtex.render-runtime": "8.x",
+    "vtex.css-handles": "0.x"
   },
   "settingsSchema": {
     "title": "Trustpilot opions",

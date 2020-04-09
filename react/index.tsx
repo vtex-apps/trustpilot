@@ -1,14 +1,17 @@
 import { canUseDOM } from 'vtex.render-runtime'
-import { PixelMessage } from './typings/events'
+
+import { PixelMessage, OrderPlacedTrackedData } from './typings/events'
+import { createProductInvitation } from './modules/invitation'
+
+function isOrderPlacedTrackedEvent(
+  e: PixelMessage
+): e is PixelMessage<OrderPlacedTrackedData> {
+  return e.data.eventName === 'vtex:orderPlacedTracked'
+}
 
 export function handleEvents(e: PixelMessage) {
-  switch (e.data.eventName) {
-    case 'vtex:pageView': {
-      break
-    }
-    default: {
-      return
-    }
+  if (isOrderPlacedTrackedEvent(e)) {
+    createProductInvitation(e.data)
   }
 }
 
