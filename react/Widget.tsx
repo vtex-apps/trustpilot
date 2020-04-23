@@ -9,8 +9,6 @@ interface Props {
   height: string
 }
 
-const CSS_HANDLES = ['trustpilotWidget'] as const
-
 const Widget: FC<Props> = ({
   templateId,
   businessUnitId,
