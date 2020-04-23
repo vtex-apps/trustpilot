@@ -24,6 +24,14 @@ https://YOURSTORENAME.myvtex.com/admin/apps/
 
 Click in `Trustpilot` and fill in your integration key.
 
+## Blocks
+
+The `trustpilot` app extends the `shop-review-interfaces` block interface, which means it enables Truspilot's widgets to be added to your store theme by inserting the interfaces in your layout.
+
+| Interface           | Blocks                          | Description                            |
+| ------------------- | ------------------------------- | -------------------------------------- |
+| `shop-review-badge` | `trustpilot-micro-review-count` | Adds the trustpilot micro count widget |
+
 ## Contributors ✨
 
 Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):

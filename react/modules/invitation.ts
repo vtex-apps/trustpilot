@@ -21,5 +21,6 @@ export function createProductInvitation(eventData: OrderPlacedTrackedData) {
     productSkus: skus,
     products,
   }
+
   window.tp('createInvitation', tpData)
 }

@@ -1,5 +1,3 @@
-import { canUseDOM } from 'vtex.render-runtime'
-
 import { PixelMessage, OrderPlacedTrackedData } from './typings/events'
 import { createProductInvitation } from './modules/invitation'
 
@@ -15,6 +13,6 @@ export function handleEvents(e: PixelMessage) {
   }
 }
 
-if (canUseDOM) {
+if (typeof window !== 'undefined') {
   window.addEventListener('message', handleEvents)
 }
