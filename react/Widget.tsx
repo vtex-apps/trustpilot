@@ -1,6 +1,5 @@
 import React, { useRef, useEffect, FC } from 'react'
 import { useRuntime } from 'vtex.render-runtime'
-import { useCssHandles } from 'vtex.css-handles'
 
 interface Props {
   templateId: string
@@ -23,20 +22,23 @@ const Widget: FC<Props> = ({
   const {
     culture: { locale },
   } = useRuntime()
-  const handles = useCssHandles(CSS_HANDLES)
 
   const storeDomain = window?.location?.hostname ?? ''
+  const hasConfig = businessUnitId == null || templateId == null
 
   useEffect(() => {
-    if (window.Trustpilot) {
+    if (window.Trustpilot && ref.current && hasConfig) {
       window.Trustpilot.loadFromElement(ref.current, true)
     }
-  }, [])
+  }, [hasConfig])
+
+  if (!hasConfig) {
+    return null
+  }
 
   return (
     <div
       ref={ref}
-      className={handles.trustpilotWidget}
       data-locale={locale}
       data-template-id={templateId}
       data-businessunit-id={businessUnitId}
