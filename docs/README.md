@@ -2,39 +2,37 @@
 
 # Trustpilot
 
+<!-- prettier-ignore-start -->
+<!-- markdownlint-disable -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
-
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
+<!-- markdownlint-enable -->
+<!-- prettier-ignore-end -->
 
-> trustpilot.com first party app
+This is a Trustpilot first party integration app. The [solution](https://www.trustpilot.com/) provides a review platform for your store. 
 
-## Setup
+## Configuration
 
-Open a terminal and type:
+1. [Install](https://vtex.io/docs/recipes/development/installing-an-app/) the `vtex.trustpilot` app;
+2. In your VTEX account's admin, open the **App** section and select the Truspilot App box;
+3. Fill in your integration key in the fields;
+4. Save your changes.
 
-```
-vtex install vtex.trustpilot@0.x
-```
+:information_source: *The integration key must be provided by Trustpilot*.
 
-Open your admin in the Apps section:
+The `trustpilot` app also enables Truspilot's widgets to be added to your store theme by inserting the `shop-review-badge` interface in your layout and then using the `trustpilot-micro-review-count` block in a template of your choosing.
 
-https://YOURSTORENAME.myvtex.com/admin/apps/
-
-Click in `Trustpilot` and fill in your integration key.
-
-## Blocks
-
-The `trustpilot` app extends the `shop-review-interfaces` block interface, which means it enables Truspilot's widgets to be added to your store theme by inserting the interfaces in your layout.
-
-| Interface           | Blocks                          | Description                            |
+| Interface           | Block                          | Description                            |
 | ------------------- | ------------------------------- | -------------------------------------- |
-| `shop-review-badge` | `trustpilot-micro-review-count` | Adds the trustpilot micro count widget |
+| `shop-review-badge` | `trustpilot-micro-review-count` | Adds the Trustpilot micro count widget in your store. |
+
+
+<!-- DOCS-IGNORE:start -->
 
 ## Contributors ✨
 
-Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):
+Thanks goes to these wonderful people:
 
 <!-- ALL-CONTRIBUTORS-LIST:START - Do not remove or modify this section -->
 <!-- prettier-ignore-start -->
@@ -44,4 +42,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
-This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
+
+<!-- DOCS-IGNORE:end -->
+
