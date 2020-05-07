@@ -22,7 +22,7 @@ const Widget: FC<Props> = ({
   } = useRuntime()
 
   const storeDomain = window?.location?.hostname ?? ''
-  const hasConfig = businessUnitId == null || templateId == null
+  const hasConfig = businessUnitId != null && templateId != null
 
   useEffect(() => {
     if (window.Trustpilot && ref.current && hasConfig) {
