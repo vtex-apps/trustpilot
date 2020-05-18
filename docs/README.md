@@ -27,7 +27,7 @@ The `trustpilot` app also enables Truspilot's Micro Review Count component to be
 
 ```diff
   "dependencies": {
-+  "vtex.shop-review-interfaces": "0.x"
++    "vtex.shop-review-interfaces": "0.x"
   }
 ```
 
