@@ -26,7 +26,7 @@ The `trustpilot` app also enables Truspilot's Micro Review Count component to be
 1. Using a [Developer workspace](https://vtex.io/docs/recipes/development/creating-a-development-workspace/), open your store's theme directory in your code editor and add the `shop-review-interfaces` app as a dependency in the `manifest.json` file:
 
 ```diff
-dependencies: {
+  "dependencies": {
 +  "vtex.shop-review-interfaces": "0.x"
   }
 ```
