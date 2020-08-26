@@ -2,7 +2,7 @@
   "pixel.trustpilot": {
     "component": "index"
   },
-  "shop-review-badge.trustpilot-micro-review-count": {
-    "component": "MicroReviewCount"
+  "shop-review-badge.trustpilot-widget": {
+    "component": "Widget"
   }
 }

@@ -1,4 +1,6 @@
 {
+  "admin/editor.trustpilot.base-url": "URL base",
+  "admin/editor.trustpilot.template-id": "Template ID",
   "admin/editor.trustpilot.business-unit-id": "ID de unidad de negocio",
-  "admin/editor.trustpilot.widget.micro-review": "Trustpilot - Micro Review Count"
+  "admin/editor.trustpilot.widget": "Trustpilot - Widget genérico"
 }
