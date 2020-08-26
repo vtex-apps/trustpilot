@@ -1,7 +1,8 @@
-import React, { useRef, useEffect, FC } from 'react'
+import React, { useRef, useEffect } from 'react'
 import { useRuntime } from 'vtex.render-runtime'
 
 interface Props {
+  baseUrl?: string
   templateId: string
   businessUnitId: string
   theme: string
@@ -9,12 +10,14 @@ interface Props {
   height: string
 }
 
-const Widget: FC<Props> = ({
-  templateId,
+const Widget: StorefrontFunctionComponent<Props> = ({
+  // 5419b6a8b0d04a076446a9ad = micro review count
+  templateId = '5419b6a8b0d04a076446a9ad',
   businessUnitId,
   theme,
   width,
   height,
+  baseUrl = 'https://www.trustpilot.com/review',
 }) => {
   const ref = useRef(null)
   const {
@@ -45,7 +48,7 @@ const Widget: FC<Props> = ({
       data-style-height={height}
     >
       <a
-        href={`https://www.trustpilot.com/review/${storeDomain}`}
+        href={`${baseUrl}/${storeDomain}`}
         target="_blank"
         rel="noopener noreferrer"
       >
@@ -54,4 +57,26 @@ const Widget: FC<Props> = ({
     </div>
   )
 }
+
+Widget.schema = {
+  title: 'admin/editor.trustpilot.widget',
+  type: 'object',
+  properties: {
+    baseUrl: {
+      title: 'admin/editor.trustpilot.base-url',
+      type: 'string',
+      default: 'https://www.trustpilot.com/review',
+    },
+    templateId: {
+      title: 'admin/editor.trustpilot.template-id',
+      type: 'string',
+      default: '5419b6a8b0d04a076446a9ad',
+    },
+    businessUnitId: {
+      title: 'admin/editor.trustpilot.business-unit-id',
+      type: 'string',
+    },
+  },
+}
+
 export default Widget
