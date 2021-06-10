@@ -8,15 +8,17 @@ interface Props {
   theme: string
   width: string
   height: string
+  stars: string
 }
 
 const Widget: StorefrontFunctionComponent<Props> = ({
   // 5419b6a8b0d04a076446a9ad = micro review count
   templateId = '5419b6a8b0d04a076446a9ad',
   businessUnitId,
-  theme,
-  width,
-  height,
+  theme = "light",
+  width = "100%",
+  height = "240px",
+  stars = "4,5",
   baseUrl = 'https://www.trustpilot.com/review',
 }) => {
   const ref = useRef(null)
@@ -46,6 +48,7 @@ const Widget: StorefrontFunctionComponent<Props> = ({
       data-theme={theme}
       data-style-width={width}
       data-style-height={height}
+      data-stars={stars}
     >
       <a
         href={`${baseUrl}/${storeDomain}`}
