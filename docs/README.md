@@ -38,6 +38,14 @@ The `trustpilot` app also enables Truspilot's widget component to be added to yo
 6. Save your changes;
 7. Access your store's website using the Developer workspace to check out the new component. If no more changes are desired, repeat the steps above in a [Production workspace](https://vtex.io/docs/recipes/development/creating-a-production-workspace/) and then [promote it to Master](https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master).
 
+### Optional
+In case that recibe error on toolbet `I couldn't find an interface "shop-review-badge.trustpilot-widget"` after finish all steps to install, you can add the Trustpilot app to your theme's manifest.json file inside peerDependencies as shown below:
+`````diff
+ "peerDependencies": {
++   "vtex.trustpilot": "1.x"
+ }
+`````
+
 :information*source: \_The integration key must be provided by Trustpilot*.
 
 The `trustpilot` app also enables Truspilot's widgets to be added to your store theme by inserting the `shop-review-badge` interface in your layout and then using the `trustpilot-widget` block in a template of your choosing.
@@ -45,6 +53,31 @@ The `trustpilot` app also enables Truspilot's widgets to be added to your store 
 | Interface           | Block               | Description                             |
 | ------------------- | ------------------- | --------------------------------------- |
 | `shop-review-badge` | `trustpilot-widget` | Adds a Trustpilot widget in your store. |
+
+
+## Custom Blocks props of `trustpilot-widget`
+
+`````json
+{
+   "shop-review-badge.trustpilot-widget#home":{
+    "title":"Widget TrustPilot",
+    "props":{
+      "width":"100%",
+      "height":"240px",
+      "theme":"light",
+      "stars":"4,5",
+      "businessUnitId":"597a23fwffdsfe05a793fe"
+    }
+  }
+}
+`````
+| Prop name |   Type   |                         Description                         | Default value |
+| :-------: | :------: | :---------------------------------------------------------: | :-----------: |
+|  `width`  | `string` | Change width of template |  `100%`   |
+|  `height`  | `string` | Change height of template |  `240px`   |
+|  `theme`  | `string` | Change theme of template `light` or `dark` |  `light`   |
+|  `stars`  | `string` | Change stars stock of template |  `4,5`   |
+|  `businessUnitId`  | `string` | Set your business code  |  null  |
 
 <!-- DOCS-IGNORE:start -->
 
