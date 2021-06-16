@@ -59,7 +59,7 @@ The `trustpilot` app also enables Truspilot's widgets to be added to your store 
 
 `````json
 {
-   "shop-review-badge.trustpilot-widget#home":{
+   "trustpilot-widget#home":{
     "title":"Widget TrustPilot",
     "props":{
       "width":"100%",
