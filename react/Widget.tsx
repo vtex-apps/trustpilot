@@ -14,7 +14,7 @@ interface Props {
 const Widget: StorefrontFunctionComponent<Props> = ({
   // 5419b6a8b0d04a076446a9ad = micro review count
   templateId = '5419b6a8b0d04a076446a9ad',
-  businessUnitId,
+  businessUnitId = '',
   theme = "light",
   width = "100%",
   height = "240px",
@@ -77,6 +77,22 @@ Widget.schema = {
     },
     businessUnitId: {
       title: 'admin/editor.trustpilot.business-unit-id',
+      type: 'string',
+    },
+    theme: {
+      title: 'admin/editor.trustpilot.theme',
+      type: 'string',
+    },
+    width: {
+      title: 'admin/editor.trustpilot.width',
+      type: 'string',
+    },
+    height: {
+      title: 'admin/editor.trustpilot.height',
+      type: 'string',
+    },
+    stars: {
+      title: 'admin/editor.trustpilot.stars',
       type: 'string',
     },
   },
