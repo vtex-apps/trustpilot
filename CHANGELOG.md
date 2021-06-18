@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [2.1.0] - 2021-06-18
+
+### Added
+- Generic trustpilot widget block without badge.
+- Aditional props to widget
+
 ## [2.0.0] - 2020-08-26
 ### Removed
 - Micro Count widget.
