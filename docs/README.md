@@ -81,7 +81,7 @@ To use widget without `shop-review-badge` to landings for example you can use `t
 |  `height`  | `string` | Change height of template |  `240px`   |
 |  `theme`  | `string` | Change theme of template `light` or `dark` |  `light`   |
 |  `stars`  | `string` | Change stars stock of template |  `4,5`   |
-|  `businessUnitId`  | `string` | Set your business code  |  null  |
+|  `businessUnitId`  | `string` | Set your business code  |  `undefined`  |
 |  `templateId`  | `string` | Set your template ID  | `5419b6a8b0d04a076446a9ad`  |
 
 <!-- DOCS-IGNORE:start -->
