@@ -2,5 +2,9 @@
   "admin/editor.trustpilot.base-url": "Base URL",
   "admin/editor.trustpilot.template-id": "Template ID",
   "admin/editor.trustpilot.business-unit-id": "Business Unit ID",
-  "admin/editor.trustpilot.widget": "Trustpilot - Generic Widget"
+  "admin/editor.trustpilot.widget": "Trustpilot - Generic Widget",
+  "admin/editor.trustpilot.theme": "Theme",
+  "admin/editor.trustpilot.width": "Width",
+  "admin/editor.trustpilot.height": "Height",
+  "admin/editor.trustpilot.stars": "Stars"
 }

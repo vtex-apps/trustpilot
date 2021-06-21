@@ -38,6 +38,7 @@ The `trustpilot` app also enables Truspilot's widget component to be added to yo
 6. Save your changes;
 7. Access your store's website using the Developer workspace to check out the new component. If no more changes are desired, repeat the steps above in a [Production workspace](https://vtex.io/docs/recipes/development/creating-a-production-workspace/) and then [promote it to Master](https://vtex.io/docs/recipes/development/promoting-a-workspace-to-master).
 
+
 :information*source: \_The integration key must be provided by Trustpilot*.
 
 The `trustpilot` app also enables Truspilot's widgets to be added to your store theme by inserting the `shop-review-badge` interface in your layout and then using the `trustpilot-widget` block in a template of your choosing.
@@ -45,6 +46,43 @@ The `trustpilot` app also enables Truspilot's widgets to be added to your store 
 | Interface           | Block               | Description                             |
 | ------------------- | ------------------- | --------------------------------------- |
 | `shop-review-badge` | `trustpilot-widget` | Adds a Trustpilot widget in your store. |
+
+
+## Block without badge
+
+To use widget without `shop-review-badge` to landings for example you can use `trustpilot-widget`, you need add to your manifest this 
+
+```diff
+ "peerDependencies": {
++   "vtex.trustpilot": "1.x"
+ }
+```
+## `trustpilot-widget` as props
+
+```json
+{
+   "trustpilot-widget#home":{
+    "title":"Widget TrustPilot",
+    "props":{
+      "width":"100%",
+      "height":"240px",
+      "theme":"light",
+      "stars":"4,5",
+      "businessUnitId":"597a23fwffdsfe05a793fe",
+      "templateId": "5419b6a8b0d04a076446a9ad",
+    }
+  }
+}
+```
+
+| Prop name |   Type   |                         Description                         | Default value |
+| :-------: | :------: | :---------------------------------------------------------: | :-----------: |
+|  `width`  | `string` | Change width of template |  `undefined`   |
+|  `height`  | `string` | Change height of template |  `undefined`   |
+|  `theme`  | `string` | Change theme of template `light` or `dark` |  `undefined`   |
+|  `stars`  | `string` | Change stars stock of template |  `undefined`   |
+|  `businessUnitId`  | `string` | Set your business code  |  `undefined`  |
+|  `templateId`  | `string` | Set your template ID  | `5419b6a8b0d04a076446a9ad`  |
 
 <!-- DOCS-IGNORE:start -->
 
