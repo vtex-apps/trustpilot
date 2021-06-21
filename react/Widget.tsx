@@ -14,11 +14,11 @@ interface Props {
 const Widget: StorefrontFunctionComponent<Props> = ({
   // 5419b6a8b0d04a076446a9ad = micro review count
   templateId = '5419b6a8b0d04a076446a9ad',
-  businessUnitId = '',
-  theme = "light",
-  width = "100%",
-  height = "240px",
-  stars = "4,5",
+  businessUnitId,
+  theme,
+  width,
+  height,
+  stars,
   baseUrl = 'https://www.trustpilot.com/review',
 }) => {
   const ref = useRef(null)
