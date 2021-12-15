@@ -1,0 +1,10 @@
+{
+  "admin/editor.trustpilot.base-url": "URL base",
+  "admin/editor.trustpilot.template-id": "ID de template",
+  "admin/editor.trustpilot.business-unit-id": "ID de unidad de negocio",
+  "admin/editor.trustpilot.widget": "Trustpilot - Widget genérico",
+  "admin/editor.trustpilot.theme": "Tema",
+  "admin/editor.trustpilot.width": "Anchura",
+  "admin/editor.trustpilot.height": "Altura",
+  "admin/editor.trustpilot.stars": "Estrellas"
+}
