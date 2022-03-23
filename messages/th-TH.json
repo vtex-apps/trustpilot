@@ -1,0 +1,10 @@
+{
+  "admin/editor.trustpilot.base-url": "URL พื้นฐาน",
+  "admin/editor.trustpilot.template-id": "ID เทมเพลต",
+  "admin/editor.trustpilot.business-unit-id": "ID หน่วยธุรกิจ",
+  "admin/editor.trustpilot.widget": "Trustpilot - วิดเจ็ตทั่วไป",
+  "admin/editor.trustpilot.theme": "ธีม",
+  "admin/editor.trustpilot.width": "ความกว้าง",
+  "admin/editor.trustpilot.height": "ความสูง",
+  "admin/editor.trustpilot.stars": "ดาว"
+}
