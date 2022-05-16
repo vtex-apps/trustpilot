@@ -1,0 +1,10 @@
+{
+  "admin/editor.trustpilot.base-url": "ベース URL",
+  "admin/editor.trustpilot.template-id": "テンプレート ID",
+  "admin/editor.trustpilot.business-unit-id": "ビジネスユニット ID",
+  "admin/editor.trustpilot.widget": "Trustpilot - ジェネリックウィジェット",
+  "admin/editor.trustpilot.theme": "テーマ",
+  "admin/editor.trustpilot.width": "幅",
+  "admin/editor.trustpilot.height": "高",
+  "admin/editor.trustpilot.stars": "スター"
+}
