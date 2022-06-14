@@ -1,0 +1,10 @@
+{
+  "admin/editor.trustpilot.base-url": "الرابط الأساسي",
+  "admin/editor.trustpilot.template-id": "معرف القالب",
+  "admin/editor.trustpilot.business-unit-id": "معرف وحدة العمل",
+  "admin/editor.trustpilot.widget": "Trustpilot - نافذة عامة",
+  "admin/editor.trustpilot.theme": "التصميم",
+  "admin/editor.trustpilot.width": "العرض",
+  "admin/editor.trustpilot.height": "الإرتفاع",
+  "admin/editor.trustpilot.stars": "نجوم"
+}
