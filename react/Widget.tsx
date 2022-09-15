@@ -9,6 +9,7 @@ interface Props {
   width: string
   height: string
   stars: string
+  tag: string
 }
 
 const Widget: StorefrontFunctionComponent<Props> = ({
@@ -19,6 +20,7 @@ const Widget: StorefrontFunctionComponent<Props> = ({
   width,
   height,
   stars,
+  tag,
   baseUrl = 'https://www.trustpilot.com/review',
 }) => {
   const ref = useRef(null)
@@ -49,6 +51,7 @@ const Widget: StorefrontFunctionComponent<Props> = ({
       data-style-width={width}
       data-style-height={height}
       data-stars={stars}
+      data-tags={tag}
     >
       <a
         href={`${baseUrl}/${storeDomain}`}
@@ -93,6 +96,10 @@ Widget.schema = {
     },
     stars: {
       title: 'admin/editor.trustpilot.stars',
+      type: 'string',
+    },
+    tag: {
+      title: 'admin/editor.trustpilot.tag',
       type: 'string',
     },
   },

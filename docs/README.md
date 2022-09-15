@@ -68,6 +68,7 @@ To use widget without `shop-review-badge` to landing pages, for example, you can
          "height":"240px",
          "theme":"light",
          "stars":"4,5",
+         "tag":"cart",
          "businessUnitId":"597a23fwffdsfe05a793fe",
          "templateId":"5419b6a8b0d04a076446a9ad"
       }
