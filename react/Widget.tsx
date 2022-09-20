@@ -9,7 +9,7 @@ interface Props {
   width: string
   height: string
   stars: string
-  tag: string
+  tag?: string
 }
 
 const Widget: StorefrontFunctionComponent<Props> = ({
