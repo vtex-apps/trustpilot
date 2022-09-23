@@ -6,5 +6,6 @@
   "admin/editor.trustpilot.theme": "Tema",
   "admin/editor.trustpilot.width": "Largura",
   "admin/editor.trustpilot.height": "Altura",
-  "admin/editor.trustpilot.stars": "Estrelas"
+  "admin/editor.trustpilot.stars": "Estrelas",
+  "admin/editor.trustpilot.tag": "Marcação"
 }
