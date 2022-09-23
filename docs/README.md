@@ -82,7 +82,7 @@ To use widget without `shop-review-badge` to landing pages, for example, you can
 |  `height`  | `string` | Change height of template |  `undefined`   |
 |  `theme`  | `string` | Change theme of template `light` or `dark` |  `undefined`   |
 |  `stars`  | `string` | Change stars stock of template |  `undefined`   |
-|  `tag`  | `string` | Change tag of template |  `undefined`   |
+|  `tag`  | `string` | Change tag of template. More info [here](https://support.trustpilot.com/hc/en-us/articles/203840856-Tag-your-service-reviews) |  `undefined`   |
 |  `businessUnitId`  | `string` | Set your business code  |  `undefined`  |
 |  `templateId`  | `string` | Set your template ID  | `5419b6a8b0d04a076446a9ad`  |
 
