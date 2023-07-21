@@ -1,0 +1,10 @@
+{
+  "admin/editor.trustpilot.base-url": "基礎 URL",
+  "admin/editor.trustpilot.template-id": "模板 ID",
+  "admin/editor.trustpilot.business-unit-id": "業務單位 ID",
+  "admin/editor.trustpilot.widget": "Trustpilot - 通用窗口小部件",
+  "admin/editor.trustpilot.theme": "主題",
+  "admin/editor.trustpilot.width": "寬度",
+  "admin/editor.trustpilot.height": "高度",
+  "admin/editor.trustpilot.stars": "星"
+}
