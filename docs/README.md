@@ -54,7 +54,7 @@ To use widget without `shop-review-badge` to landing pages, for example, you can
 
 ```diff
  "peerDependencies": {
-+   "vtex.trustpilot": "1.x"
++   "vtex.trustpilot": "2.x"
  }
 ```
 ## `trustpilot-widget` as props
