@@ -14,9 +14,9 @@ This is a Trustpilot first-party integration app. The [solution](https://www.tru
 
 ## Configuration
 
-1. [Install](https://vtex.io/docs/recipes/development/installing-an-app/) the `vtex.trustpilot` app in the VTEX account in which you are working;
-2. In your VTEX account's admin, open the **App** section and select the Trustpilot App box;
-3. Fill in your integration key, provided by Trustpilot, in the fields;
+1. [Install](https://vtex.io/docs/recipes/development/installing-an-app/) the `vtex.trustpilot` app in the VTEX account in which you are working.
+2. In your VTEX account's admin, open the **App** section and select the Trustpilot App box.
+3. Fill in your integration key, provided by Trustpilot, in the fields.
 4. Save your changes.
 
 ### Using the Trustpilot's Widget component
