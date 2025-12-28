@@ -1,0 +1,10 @@
+{
+  "admin/editor.trustpilot.base-url": "베이스 URL",
+  "admin/editor.trustpilot.template-id": "템플릿 ID",
+  "admin/editor.trustpilot.business-unit-id": "사업 단위 ID",
+  "admin/editor.trustpilot.widget": "트러스트파일럿 - 일반 위젯",
+  "admin/editor.trustpilot.theme": "테마",
+  "admin/editor.trustpilot.width": "너비",
+  "admin/editor.trustpilot.height": "높이",
+  "admin/editor.trustpilot.stars": "별"
+}
